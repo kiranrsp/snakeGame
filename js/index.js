@@ -54,6 +54,8 @@ function gameEngine()
 if(snakeArr[0].y === food.y && snakeArr[0].x ===food.x){
 
     snakeArr.unshift({x: snakeArr[0].x + inputDir.x, y: snakeArr[0].y + inputDir.y});
+    score +=1;
+    scorecard.innerHTML = "Score: " + score
     let a = 2;
     let b = 16;
     food = {x: Math.round(a + (b-a)* Math.random()), y: Math.round(a + (b-a)* Math.random())}

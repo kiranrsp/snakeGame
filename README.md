@@ -12,15 +12,7 @@ Each time an apple is eaten, the snake will grow. In the original Snake game, yo
 
 ### MVP Features
 1. Welcome screen and game start screen.
-2. Reset game
-3. Pause / Resume game
 4. Current score
-
-###  Features Roadmap
-1. Colour selection
-2. Level selection with various difficulty.
-3. Share button integration with whats app, twitter.
-4. High score
 
 
 ## Game Rules
@@ -30,6 +22,10 @@ There are only two rules you must follow when playing: don’t hit a wall and do
 ## Game Wireframes
 ![alt text](Images/wireframe.png)
 
+## Technologies used
+
+HTML, CSS, JavaScript
+
 
 ## Game USer Stories 
 1. As a user I want to click space bar or start to start the game
@@ -37,6 +33,13 @@ There are only two rules you must follow when playing: don’t hit a wall and do
 3. As a user resume the game which is paused
 4. As a user I want to see what’s my current score while playing. 
 
+###  Future Roadmap
+1. Reset game
+3. Pause / Resume game
+2. Colour selection
+3. Level selection with various difficulty.
+4. Share button integration with whats app, twitter.
+5. High score
 
 ## Contributing
 Initial version created by : Kiran 

@@ -22,11 +22,16 @@
 }
 .head {
     background-color: green;
+    border: 2px solid black;
+
 }
 
 .snake {
     background-color: rgb(177, 191, 154);
+    border: 2px solid black;
 }
 .food {
     background-color: red;
+    border: 2px solid black;
+
 }

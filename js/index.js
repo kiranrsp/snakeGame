@@ -7,12 +7,6 @@ let food = {x:6, y: 7}
 let score = 0
 const gameOverSound = new Audio('gameOver.mp3')
 
-
-
-
-
-
-
 //Functions
 
 function main(ctime) {
@@ -28,7 +22,8 @@ gameEngine();
 }
 
 function isCollide (snake) {
-    for(let i = 1;i <snakeArr.length; i++) {
+    console.log('isCollide', snake, snakeArr)
+    for(let i = 1;i < snakeArr.length; i++) {
         if (snake[i].x === snake[0].x && snake[i].y === snake[0].y){
             return true
     
@@ -36,10 +31,11 @@ function isCollide (snake) {
 
     }
 
-if(snake[0].x >=18 || snake[0].x <=0 && snake[0].y >=18 || snake[0].y <=0)
+if((snake[0].x >=18 || snake[0].x <0) || (snake[0].y >=18 || snake[0].y <=0))
 {       
      return true
 }
+return false
 }
 
 //Logic
@@ -47,7 +43,7 @@ function gameEngine()
 {
  // Part 1: Updating the snake array & Food
  if(isCollide(snakeArr)){
-    gameOverSound.play();
+    //gameOverSound.play();
     inputDir =  {x: 0, y: 0}; 
     alert("Game Over. Press any key to play again!");
     snakeArr = [{x: 13, y: 15}];

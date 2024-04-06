@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.body{
+    background-color: lightcoral;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board{
+    background-color: grey;
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);;
+}
+.head {
+    background-color: green;
+}
+
+.snake {
+    background-color: rgb(177, 191, 154);
+}
+.food {
+    background-color: red;
+}

@@ -25,14 +25,16 @@ function isCollide (snake) {
     console.log('isCollide', snake, snakeArr)
     for(let i = 1;i < snakeArr.length; i++) {
         if (snake[i].x === snake[0].x && snake[i].y === snake[0].y){
+            
             return true
     
         }
 
     }
 
-if((snake[0].x >=18 || snake[0].x <0) || (snake[0].y >=18 || snake[0].y <=0))
+if((snake[0].x >=18 || snake[0].x <=0) || (snake[0].y >=18 || snake[0].y <=0))
 {       
+    
      return true
 }
 return false
@@ -44,10 +46,12 @@ function gameEngine()
  // Part 1: Updating the snake array & Food
  if(isCollide(snakeArr)){
     //gameOverSound.play();
+    score = 0
+    scorecard.innerHTML = "Score: " + score
     inputDir =  {x: 0, y: 0}; 
     alert("Game Over. Press any key to play again!");
     snakeArr = [{x: 13, y: 15}];
-    score = 0; 
+   
 }
 
 // If you have eaten the food, increment the score and regenerate the food
